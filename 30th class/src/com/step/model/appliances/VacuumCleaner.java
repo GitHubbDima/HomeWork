@@ -22,12 +22,13 @@ public class VacuumCleaner {
             System.out.println();
         }
     }
+
     public void searche_by_company(String company){
         boolean check = true;
         System.out.print(company + ": ");
 
         for (int i = 0; i < this.company.length; i++) {
-            if ( this.company[i] == company){
+            if ( this.company[i].equals(company)){
                 System.out.print(this.price[i] + ", ");
                 check = false;
             }

@@ -6,7 +6,7 @@ public class Refrigerator {
     private boolean alimentation ;
     private final int normal_temperature = 4;
 
-    public void freeze(){
+    private void freeze(){
         Random random = new Random();
         int temperature = 8;
 
@@ -17,7 +17,7 @@ public class Refrigerator {
         }
     }
     public void doorCheck(String condition){
-        if (condition == "open"){
+        if (condition.equals("open")){
             this.alimentation = false;
             System.out.println("door is open");
         }

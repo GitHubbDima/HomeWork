@@ -15,22 +15,30 @@ public class Microwave {
         System.out.println("  2. 800W ");
         System.out.println("  3. 1200W ");
         System.out.println("  4. 1600W ");
-        System.out.println(" Select the power: ");
-        int number = in.nextInt();
+        System.out.print(" Select the power: ");
+        int number ;
 
-        switch (number){
-            case 1: { this.power = 600; break; }
-            case 2: { this.power = 800; break; }
-            case 3: { this.power = 1200; break; }
-            case 4: { this.power = 1600; break; }
-            default: { System.out.print(" Selcet in the list.");}
-        }
+        do{
+            number = in.nextInt();
+            switch (number){
+                case 1: { this.power = 600; break; }
+                case 2: { this.power = 800; break; }
+                case 3: { this.power = 1200; break; }
+                case 4: { this.power = 1600; break; }
+                default: { System.out.print(" Selcet in the list. ");}
+            }
+        }while(number > 4 || number < 1);
     }
 
-    public void timer(int seconds) throws InterruptedException {
+    public void timer(int seconds){
         for (int i = 1; i < seconds+1; i++){
             System.out.print(" " + i);
-            TimeUnit.SECONDS.sleep(stoped);
+            try{
+                TimeUnit.SECONDS.sleep(stoped);
+            }
+            catch (InterruptedException ie){
+                ie.getCause();
+            }
         }
     }
 }

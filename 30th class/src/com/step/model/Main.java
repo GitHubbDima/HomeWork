@@ -6,16 +6,21 @@ import com.step.model.appliances.Microwave;
 import com.step.model.appliances.Refrigerator;
 import com.step.model.appliances.TV;
 import com.step.model.appliances.VacuumCleaner;
+import com.step.model.bicycle.*;
 import com.step.model.differently.Book;
 import com.step.model.differently.SafeBox;
 import com.step.model.differently.Sofa;
 import com.step.model.differently.Wall;
 import com.step.model.domestic_animals.Cat;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 	// write your code here
+
+        Scanner in = new Scanner(System.in);
 /*        Clock clock = new Clock();
         clock.setHour(21);
         clock.showTime();*/
@@ -24,13 +29,12 @@ public class Main {
         headphones.cableConnection(false);
         headphones.bluetooth(true);*/
 
-/*        Microwave microwave = new Microwave();
+        Microwave microwave = new Microwave();
         microwave.setPower();
-        microwave.timer(10);*/
+        microwave.timer(10);
 
 /*        Refrigerator refrigerator = new Refrigerator();
-        refrigerator.doorCheck("open");
-        refrigerator.freeze();*/
+        refrigerator.doorCheck("close");*/
 
 /*        TV tv = new TV();
         tv.changeSource();
@@ -56,5 +60,27 @@ public class Main {
 /*        Cat cat = new Cat();
         cat.feedCat("milk");*/
 
+/*        Battery battery = new Battery();
+        battery.statusBattery();
+        battery.useBattery(3650);
+        battery.statusBattery();*/
+
+/*        Motor motor = new Motor();
+        do{
+            System.out.print(" Insert tension motor: ");
+            motor.setTensionMotor(in.nextInt());
+        }while(!motor.compareTensionMotor_TensionBattery());*/
+
+/*        Pump pump = new Pump();
+        System.out.println(" pump type: " + pump.getPumpType());
+        pump.usePump(1000, 2000);*/
+
+/*        Wheel wheel = new Wheel();
+        wheel.checkPressure();
+        wheel.crossing(11000);
+        wheel.checkPressure();*/
+
+/*        Bicycle bicycle = new Bicycle();
+        bicycle.*/
     }
 }
