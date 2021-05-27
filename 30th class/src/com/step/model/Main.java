@@ -29,9 +29,9 @@ public class Main {
         headphones.cableConnection(false);
         headphones.bluetooth(true);*/
 
-        Microwave microwave = new Microwave();
+/*        Microwave microwave = new Microwave();
         microwave.setPower();
-        microwave.timer(10);
+        microwave.timer(10);*/
 
 /*        Refrigerator refrigerator = new Refrigerator();
         refrigerator.doorCheck("close");*/
@@ -82,5 +82,6 @@ public class Main {
 
 /*        Bicycle bicycle = new Bicycle();
         bicycle.*/
+
     }
 }
