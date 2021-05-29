@@ -14,9 +14,10 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-        Scanner in = new Scanner(System.in);
 
-        InitializationArray initArray = new InitializationArray();
+   /*     Scanner in = new Scanner(System.in);
+
+        InitializationArray initArray = new InitializationArray();*/
 /*
         System.out.print(" Insert length the array: ");
         int[] demoArray = new int[in.nextInt()];

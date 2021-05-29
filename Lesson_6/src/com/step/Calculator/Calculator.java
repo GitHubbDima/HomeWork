@@ -2,6 +2,7 @@ package com.step.Calculator;
 
 public class Calculator {
 
+
     public int gathering(int x, int y){
         return x + y;
     }
