@@ -1,8 +1,10 @@
 package com.step;
 
+import com.step.Exceptions.ArrayExceptions.ArrayExceptions;
 import com.step.Exceptions.IndexOutExceptions;
 import com.step.model.Employee.Employee;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -11,16 +13,14 @@ public class Main {
 	// write your code here
         Scanner in = new Scanner(System.in);
 
-/*        boolean verify = true;
+/*        String saveNumber;
+        App app = new App();
         do {
-            App app = new App();
-            try{
-                app.verifyIf_IsInt();
-                verify = false;
-            }catch (IntExceptions myEx){
-                System.out.println(myEx.getMessage());
-            }
-        }while(verify);*/
+            System.out.println("Enter a number: ");
+            saveNumber = in.next();
+        }
+        while(app.checkIf_IsInteger(saveNumber));*/
+
 
 /*        Employee employee = new Employee();
         char[] anything = employee.enterSentence();
